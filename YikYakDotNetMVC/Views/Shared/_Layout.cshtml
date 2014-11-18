@@ -1,0 +1,21 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <script src="~/bower_components/webcomponentsjs/webcomponents.js"></script>
+    @RenderSection("imports", required: false)
+    <style>
+        #controlsToggle {
+            position: absolute;
+            left: 10%;
+            bottom: 10%;
+        }
+    </style>
+    @RenderSection("style", required: false)
+</head>
+<body fullbleed unresolved>
+    @RenderBody()
+@RenderSection("scripts", required: false)
+</body>
+</html>
